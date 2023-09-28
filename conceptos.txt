@@ -34,3 +34,12 @@ ________________
 
 10  12  18  24  31  34  40  46  59  60  
 1   2   3   4   5   6   7   8   9   10
+
+
+echo "# EstructuraDeDatos-4b" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/herixV/EstructuraDeDatos-4b.git
+git push -u origin main
