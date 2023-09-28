@@ -1,0 +1,36 @@
+BUSQUEDA:
+Es el proceso de encontrar un elemento objetivo dentro de un grupo de 
+elementos o determinar que el elemnto objetivo no existe dentro del grupo.
+
+conunto de busqueda: 
+Es el conjunto de elementos en el que hay que buscar a un elemento.
+
+TIPOS DE BUSQUEDA:
+
+BUSQUEDA LINEAL:
+Es una lista de cualquier tipo; debemos comenzar desde el inicio 
+de la lista y comparar por turno cada valor con el elemento espesificado
+
+
+5   7   10  4   8   9   20
+1   2   3   4   5   6   7  
+.   .   .   .   .                           //BUSCO EL 8 QUE ESTA EN LA CASILLA 5
+
+BUSQUEDA BINARIA:
+Eliminar la mitad de los candidatos viables con cada comparacion.
+
+1. El conjunto de elementos debe de estar ordenado.
+2. eliminar partes del conjunto de busqueda elemtos 
+
+10  12  18  24  31  34  40  46  59  60
+1   2   3   4   5   6   7   8   9   10
+................
+
+BUSCAR: 31
+10/2=5
+BUSCAR: 40 //40 MAYOR QUE 31(SE ENCUETRA EN EL PUESTO 5 QUE ES EL CENTRO 10/2=5) 
+10/2=5
+________________
+
+10  12  18  24  31  34  40  46  59  60  
+1   2   3   4   5   6   7   8   9   10
