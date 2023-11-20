@@ -43,3 +43,208 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/herixV/EstructuraDeDatos-4b.git
 git push -u origin main
+_________________________________
+ordenamiento: es el proceso de disponer un grupo de elementos en un orden 
+determinado (ascendente o descendente) segun el criterio.
+
+tipos de ordenamiento:
+
+ordenacion secunecial.- se usa un par de bucles anidados y requieren aproximadamente 
+n^2 comparaciones para ordenar n elementos
+ordenacion por seleccion.
+ordenacion por insercion.
+ordenacion por metodo burbuja.
+
+ordenacion logaritmica.- requiere de n log2n comparaciones para ordenar n elementos.
+ordenacion rapida.
+ordenacion por combinacion
+
+ordenacion por seleccion:
+ordena una lista de valores colocando repetidamente valores concretos su posicion 
+final ordenada.
+ordenacion por insercion:
+va a ordenar una list a de valores insertando repetidamnete los valores concretos en un 
+sub conjunto de la lista que ya haya sido ordenada.
+ordenacion por metodo burbuja:
+va ordenado de pares 
+
+colecion 
+es un objeto que recopila y ormganiza a otros objetos.
+las conecciones son las que se encargan de definir de firma espesifica como se acceden y 
+como se gestionan los objetos de cualquiuer tipo.
+tipos de colecciones
+coleccion lineal:
+orginazada en linea recta(horizontales o verticales)
+no lineales:
+estan organizada de forma jereargica, red o de arbol.
+
+tipo de dato: es un termino relacionado con las colecciones y es un grupo de vvalores 
+junto con operaciones definidas sobre esos valores.
+
+ADT (Abstract data type)
+son tipo de datos cuyos valores y operaciones no estan inherentemente definidas dentro 
+del lenguaje de programacion.Son datos abstractos en el sentido de que deben definirse 
+los detalles de su implementacion y esos detalles deben ocultarse a los ojos del usuario.
+
+Conjunto:
+es un grupo de elementos; o un areglo; En los conjuntos NO hay elementos duplicados.
+
+caracteristicas:
+1. se consideran con una coleccion no lineal.
+2. no existe ningun tipo de organizacion entre los elementos de la coleccion.
+3. no tienen ninguna relacion entre si.
+4. no tienen ninguna inportancia el orden en el que se hayan añadido al conjunto.
+
+operaciones de coleccion de tipo Conjuntos:
+___________________________________________________________________________________________________
+|Operacio          |descripcion                                                                    |
+___________________________________________________________________________________________________|
+|add               |Añade los elementos a un conjunto                                              |
+|addAll            |Añade los elementos de un conjunto a otro                                      |
+|removeRandom      |Eliminar un elemento aleatoriamente                                            |
+|Remove            |Elimina un elemento concreto                                                   |
+|Union             |Convina elemntos de 2 conjuntos para crear un tercero                          |
+|Equals            |Determina si 2 conjuntos contienen los mismos elementos                        |
+|isEmpty           |Determina si esta vacio                                                        |
+|Size              |Determina el numero de elemtos del conjunto                                    |
+|Iterator          |Proporciona el medio de iterar a travez de una coleccion.                      |
+|                  |hasNext:devuelve el valor verdadero si hay mas elemetos en un conjunto         |
+|                  |Next: devuelve el sig elemento de la iteracion                                 |
+|toString          |Representa el conjunto en forma de caracteres                                  |
+___________________________________________________________________________________________________|
+
+
+pila
+Es una coleccin lineal organizada y los elementos se añaden y se eliminan en un mismo extremo.
+
+Lifo: biene de la sintaxis(Last In, first Out) el ultimo en entrar el primero en salir.
+
+___________________________________________________________________________________________________
+Operadores ADT                                                                                     |
+___________________________________________________________________________________________________|
+push añade elementos em la parte superior de la pila                                               |
+---------------------------------------------------------------------------------------------------|
+pop     |eliminar un elemento de la parte superior de la pila                                      | 
+peek    |examina el elemento situado en la parte superior de la pila                               |
+isEmpty |Devuelve valor de true si la pila esta vacia o false en caso contrario                    |
+Size    |devuelve el numero de elemnetos de la pila                                                |
+toString|Representa los elementos de una pila en forma de caracteres                               |
+___________________________________________________________________________________________________|
+lifo 
+biene de las siglas last int first Out
+
+colas 
+Es una coleccion lineal cuyos elementos se añaden por un extremo y se elimina por el otro
+FIFO(first in firts out) primero que entra primero en salir.
+___________________________________________________________________________________________________
+Elemetos ADT                                                                                       |
+___________________________________________________________________________________________________|
+enqueue     Poner en col, Añade un elementos al final de la cola.                                  |
+dequeue     Sacar de la cola.Elimina un elemento al principio de la cola.                          |
+first       Examina el elemto situado al principio de la cola. sin eliminarlo de la coleccion.     |
+Size        Determina el numero de elementos que hay en una cola.                                  |
+toString    Devuelve una representacion de la cola en forma de caracteres.                         |
+___________________________________________________________________________________________________|
+
+Cifrado Cesar
+
+con operadores ADT se crea 
+
+Codigo ASCII
+
+Estructuras Arboles:
+son estructuras no lineales donde un nodo se enlaza con otro nodo.
+
+Es una colección de elementos organizados dentro de una jerarquia de nodos. Y 
+cada nodo almacena informacion de tipo T.
+
+donde empieza las ramificaciones se le llama NODO RAIZ
+todos los nodos estan enlazados por aristas 
+y todos los nodos va n a estar por niveles
+0                   A                      b y c hijos de a
+1               b       c                  b y c son hermanos
+2           d       e       f                  f se les llama hojas cuando estan solos sin hermanos 
+3           g                                  g es una Hoja
+
+    NODOS INTERNOS b,c,d son nodos que no son raiz y que almenos tienen un hijo.
+    RAIZ SIEMPRE EN NIVEL 0
+    #HOJAS SIEMPREN EN EL ULTIMO NIVELE DE LA JERARQUIA
+
+    Altura de un arbol
+camino mas largo: a-b-d-g con base al nivel mas largo.
+
+CLASIFICACION DE LOS ARBOLES:
+Arboles generales:
+son arboles que no tinen liminte en lo que respecta al numero de hijos que un nodo puede tener.
+Arboles primarias:
+arboles que limitan cada nodo a no mas de n hijos.
+Arboles n-arios:
+arboles que tiene solo dos hijos para cada nodo.
+
+de manera equilibrada a deseqilibridada
+
+TECNICAS PARA TRABAJAR ARBOLES
+Basadas en una matriz con categorias conputacionales.
+Basadas en una matriz con estrategias de enlaces simulados.
+
+Basadas en una matriz con categorias conputacionales:
+para cualquier elementos almacenado en la posicion n de la matriz, el hijo izquierdo de dicho 
+elemento estara almacenado en la posicion (2*n+1) y el hijo derecho de dicho elemento 
+estara almacenado en la posicion (2*(n+2)).
+
+DERECHA 2*(N+2)
+IZQUIERDA 2*N + 1
+
+                 A
+                / \
+               B   C
+              / \ 
+             D   E  
+___________________________________________________________________________________________________
+ELEMENTO    A       B       C       D       E                       F                              |
+POSICIÓN    0       1       2       3       4       5       6       7                              |
+            Raiz    Izq     Der     Izq     Der                     Izq                            |
+                    2*N+1   2*(N+1) 2*N+1   2*(N+1)                 2*N+1                          |
+                    2*0+1   2*(0+1) 2*1+1   2*(1+1)                 2*3+1                          |
+                    0+1=1   2*1=2   2*1=3   2*2=4                   6+1=7                          |
+___________________________________________________________________________________________________|
+
+RECORRIDO DE ARBOLES
+1 recorrido descendente:
+se lleva acabo visistando cada nodo seguido de sus hijos comenzando por la raiz
+Visitar-nodo recorrer el hijo-izquierdo recorrer el hijo-derecho.
+
+2 recorrido en arbol:
+visitar hijo-izquierdo del nodo luego el nodo derecho y luego los nodos restantes.
+recorrer hijo-izquierdo
+visitar nodo
+recorrer hijo-derecho
+
+3 recorrido ascendente:
+se lleva a cabo visitando a los hijos y luego el nodo, comenzando por el final de la raiz 
+recorrer hijo-izquierdo
+recorrer hijo-derecho
+Visitar el nodo
+
+4 recorrido por niveles:
+visitanado los nodos de cada nivel, un nivel a la vez comenzando ppor la raiz.
+
+recursivo:
+preorden: padre -> izquierda -> derecha
+postorden: izquierda -> padre -> derecha
+
+operadores ADT Arboles
+___________________________________________________________________________________________________
+removeLeftSubtree      | Elimina el sub arbol izquierdo de la raiz                                  |
+removeRightSubtree     | Eliminar el sub arbol derecho de la raiz                                   |
+removeAllElement       | Elimina todos los elementos del arbol                                      |
+isEmpty                | Determina si el arbol esta vacio                                           |
+Size                   | Determina el numero de elementos del arbol                                 |
+Contains               | Determina si un elemento espesifico esta dentro del arbol                  |
+Find                   | Devuelve una referencia al elemento espesificado                           |
+toString               | Devuelve la representacion del arbol en forma del caracteres               |
+iteratorInOrder        | Devuelve un iterador para el recorrido de arbol                            |
+iteratorPreOrder       | Devuelve un iterador para el recorrido descendente del arbol               |
+IteratorPostOrder      | Devuelve un iterador para el recorrido ascendente del arbol                |
+iteratorLevelOrder     | Devuelve un iterador para el recorrido por niveles del arboles             |
+_______________________|____________________________________________________________________________|

@@ -1,0 +1,29 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+public class App {
+   public App() {
+   }
+
+   public static void main(String[] var0) throws Exception {
+      Coin var1 = new Coin();
+      System.out.println(var1);
+      byte var2 = 5;
+      byte var3 = 12;
+      System.out.println("Variables Primitivas");
+      System.out.println("num1=" + var2);
+      System.out.println("num2=" + var3);
+      var3 = var2;
+      var2 = 10;
+      System.out.println("num1=" + var2);
+      System.out.println("num2=" + var3);
+      Numero var4 = new Numero();
+      var4.numero = 5;
+      Numero var5 = new Numero();
+      var5.numero = 12;
+      System.out.println("Variables de Objeto");
+      System.out.println("n1=" + var4.numero);
+      System.out.println("n2=" + var5.numero);
+      var4.numero = 10;
+      System.out.println("n1=" + var4.numero);
+      System.out.println("n2=" + var4.numero);
+   }
+}
