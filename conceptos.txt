@@ -122,8 +122,7 @@ Lifo: biene de la sintaxis(Last In, first Out) el ultimo en entrar el primero en
 ___________________________________________________________________________________________________
 Operadores ADT                                                                                     |
 ___________________________________________________________________________________________________|
-push añade elementos em la parte superior de la pila                                               |
----------------------------------------------------------------------------------------------------|
+push    |añade elementos em la parte superior de la pila                                               |
 pop     |eliminar un elemento de la parte superior de la pila                                      | 
 peek    |examina el elemento situado en la parte superior de la pila                               |
 isEmpty |Devuelve valor de true si la pila esta vacia o false en caso contrario                    |
@@ -196,7 +195,7 @@ DERECHA 2*(N+2)
 IZQUIERDA 2*N + 1
 
                  A
-                / \
+                / \ <----ramas
                B   C
               / \ 
              D   E  

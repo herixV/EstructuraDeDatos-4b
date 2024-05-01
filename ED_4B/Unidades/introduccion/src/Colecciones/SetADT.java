@@ -6,7 +6,7 @@ public interface SetADT<T> {
 
     public void addAll(SetADT<T> set);
 
-    public T removeRandom();  
+    public T removeRandom();
 
     public T remove(T elements);
 
